@@ -14,7 +14,8 @@
     "core-js": "^2.6.9"
   },
   "scripts": {
-    "watch": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development parcel index.html --no-hmr --open",
+    "watch": "node ./node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development parcel index.html --no-hmr --open",
+    "dev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development parcel index.html --no-hmr --open",
     "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url ./",
     "link-local": "yalc link"
   },
