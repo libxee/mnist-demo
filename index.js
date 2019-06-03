@@ -274,7 +274,7 @@ async function load() {
 // This is our main function. It loads the MNIST data, trains the model, and
 // then shows what the model predicted on unseen test data.
 ui.setTrainButtonCallback(async () => {
-  ui.logStatus('Loading MNIST data...');
+  ui.logStatus('Loading MNIST data, might be slow, please wait...');
   await load();
 
   ui.logStatus('Creating model...');

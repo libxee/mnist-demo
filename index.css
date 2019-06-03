@@ -8487,8 +8487,8 @@ a.mdc-list-item {
 /*# sourceMappingURL=material-components-web.css.map*/
 body {
   margin: 0;
-  --mdc-theme-primary: #F16528;
-  --mdc-theme-secondary: #FDBC35; }
+  --mdc-theme-primary: rgb(40, 167, 241);
+  --mdc-theme-secondary: rgba(23, 175, 235, 0.507); }
 
 .tfjs-example-container {
   padding: 60px;
@@ -8536,7 +8536,7 @@ p.section-head {
   font-weight: 500;
   margin-top: 2em;
   margin-bottom: 1em;
-  border-left: 1px solid #EF6C00;
+  border-left: 1px solid rgb(0, 163, 239);
   padding-left: 24px;
   margin-left: -24px;
   color: #818181; }
