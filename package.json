@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@tensorflow/tfjs": "^1.0.4",
-    "@tensorflow/tfjs-vis": "^1.0.3"
+    "@tensorflow/tfjs-vis": "^1.0.3",
+    "core-js": "^2.6.9"
   },
   "scripts": {
     "watch": "cross-env NODE_ENV=development parcel index.html --no-hmr --open",

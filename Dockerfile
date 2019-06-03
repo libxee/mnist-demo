@@ -3,4 +3,4 @@ COPY . /app
 WORKDIR /app
 RUN npm install --registry=https://registry.npm.taobao.org
 EXPOSE 1234
-CMD npm run start
+CMD npm run watch
