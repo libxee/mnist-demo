@@ -3,6 +3,6 @@ COPY . /app
 WORKDIR /app
 RUN \
 npm install yarn -g --registry=https://registry.npm.taobao.org \
-yarn
+yarn install --force
 EXPOSE 1234
 CMD yarn watch
