@@ -1,6 +1,8 @@
-FROM node:8.4
+FROM node:8.9.1
 COPY . /app
 WORKDIR /app
-RUN npm install --registry=https://registry.npm.taobao.org
+RUN \
+npm install yarn -g --registry=https://registry.npm.taobao.org \
+yarn \
 EXPOSE 1234
-CMD npm run watch
+CMD yarn watch
