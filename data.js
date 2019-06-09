@@ -14,10 +14,6 @@ const MNIST_IMAGES_SPRITE_PATH =
 const MNIST_LABELS_PATH =
     'https://pics-1253438335.cos.ap-chengdu.myqcloud.com/mnist_labels_uint8';
 
-/**
- * A class that fetches the sprited MNIST dataset and provide data as
- * tf.Tensors.
- */
 export class MnistData {
   constructor() {}
 
@@ -78,14 +74,7 @@ export class MnistData {
         this.datasetLabels.slice(NUM_CLASSES * NUM_TRAIN_ELEMENTS);
   }
 
-  /**
-   * Get all training data as a data tensor and a labels tensor.
-   *
-   * @returns
-   *   xs: The data tensor, of shape `[numTrainExamples, 28, 28, 1]`.
-   *   labels: The one-hot encoded labels tensor, of shape
-   *     `[numTrainExamples, 10]`.
-   */
+
   getTrainData() {
     const xs = tf.tensor4d(
         this.trainImages,
@@ -95,17 +84,7 @@ export class MnistData {
     return {xs, labels};
   }
 
-  /**
-   * Get all test data as a data tensor a a labels tensor.
-   *
-   * @param {number} numExamples Optional number of examples to get. If not
-   *     provided,
-   *   all test examples will be returned.
-   * @returns
-   *   xs: The data tensor, of shape `[numTestExamples, 28, 28, 1]`.
-   *   labels: The one-hot encoded labels tensor, of shape
-   *     `[numTestExamples, 10]`.
-   */
+  
   getTestData(numExamples) {
     let xs = tf.tensor4d(
         this.testImages,

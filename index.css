@@ -8336,7 +8336,7 @@ a.mdc-list-item {
   .mdc-top-app-bar--fixed-adjust {
     padding-top: 56px; } }
 
-.mdc-typography, .tfjs-example-container {
+.mdc-typography, .main-container {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
@@ -8490,11 +8490,11 @@ body {
   --mdc-theme-primary: rgb(40, 167, 241);
   --mdc-theme-secondary: rgba(23, 175, 235, 0.507); }
 
-.tfjs-example-container {
+.main-container {
   padding: 60px;
   display: flex;
   flex-direction: column; }
-  .tfjs-example-container.centered-container {
+  .main-container.centered-container {
     margin: 0 auto;
     max-width: 960px; }
 
@@ -8513,7 +8513,7 @@ body {
     flex-direction: column; }
     .with-cols > * {
       flex: auto; }
-  .tfjs-example-container {
+  .main-container {
     padding: 20px; } }
 
 h1 {
